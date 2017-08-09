@@ -130,7 +130,7 @@ float timeOpen = 0;
 
 **Rationale:** Readability. 
 
-## Naming Classes, Structures, Enumerated types and typedefs 
+## Naming Classes, Structures, enumerated types and typedefs 
 ### Rule 11 
 **Rule:** The name of a class, structures, namespace, enumeration, or type created with typedef will begin with an uppercase letter. Each word will begin with an upper case letter. All other letters will be lower case alphanumeric (sometimes called Snake case). 
 
@@ -141,7 +141,7 @@ float timeOpen = 0;
 class DiagonalMatrix { // Only first letter of each word is capitalized
 … 
 };  
-enum RGBColors {red, green, blue}; // RGB is an acronym so all letters 
+enum RGBColors {RED, GREEN, BLUE}; // RGB is an acronym so all letters 
                                    // are in upper case
 ```
 **Exception:** The first letter of a typedef name may be in lowercase in order to conform to a standard library interface or when used as a replacement for fundamental types.
@@ -158,8 +158,7 @@ typename C::value_type s=0; // value_type of container C begins with a lower cas
 **Rationale:** Style, easy differentiation of functions, type definitions, and variables.  
 **Example 1**
 ```C++
-class ExampleClassName 
-{ 
+class ExampleClassName { 
 private: 
   uint16 example_variable_name; 
 }; 
@@ -171,8 +170,7 @@ private:
 
 **Example 1** 
 ```C++
-class ExampleClassName 
-{ 
+class ExampleClassName { 
 public: 
   uint16 exampleFunctionName(void); 
 private: 
@@ -182,14 +180,14 @@ private:
 
 ## Naming Constants and Enumerators 
 ### Rule 14 
-**Rule:** Identifiers for constant and enumerator values shall be lowercase. 
+**Rule:** Identifiers for constant and enumerator values shall be uppercase. 
 
-**Rationale:** Although it is an accepted convention to use uppercase letters for constants and enumerators, it is possible for third party libraries to replace constant/enumerator names as part of the macro substitution process (macros are also typically represented with uppercase letters). 
+**Rationale:** It is an accepted convention to use uppercase letters for constants and enumerators. An argument is sometimes made that macro substitution is easier if enum values are lower case. We will avoid macro substitutions.
 
 **Example: **
 ```C++
 const uint16 max_pressure = 100; 
-enum Switch_position {up, down}; 
+enum Switch_position {UP, DOWN}; 
 ```
 
 ## Naming Files 
