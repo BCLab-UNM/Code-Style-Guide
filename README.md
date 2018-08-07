@@ -164,19 +164,33 @@ private:
 }; 
 ```
 ### Rule 13 
-**Rule:** Functions names will be composed entirely of alphanumeric symbols. Each word, except the first, will start with a capital letter (sometimes known as “camel case.”).  
+**Rule:** Non-member function names will be composed entirely of alphanumeric symbols. Each word, except the first, will start with a capital letter (sometimes known as “camel case.”).  
 
 **Rationale:** Style, easy differentiation of functions, type definitions, and variables. 
 
 **Example 1** 
 ```C++
+int exampleFunction(int x);
+```
+
+### Rule 13.1
+**Rule** Member functions shall be in upper camel case (as above, but
+with the first letter capitalized).
+
+**Rationale:** Easy differentiation between member functions and non-member functions
+functions. Easy differentiation between member functions defined by
+the standard C++ libraries and our own functions.
+
+**Example 1:**
+```C++
 class ExampleClassName { 
 public: 
-  uint16 exampleFunctionName(void); 
+  uint16 ExampleFunctionName(void); 
 private: 
   uint16 example_variable_name; 
 }; 
 ```
+
 
 ## Naming Constants and Enumerators 
 ### Rule 14 
