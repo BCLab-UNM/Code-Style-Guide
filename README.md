@@ -178,7 +178,7 @@ int exampleFunction(int x);
 with the first letter capitalized).
 
 **Rationale:** Easy differentiation between member functions and
-non-member functions functions. Easy differentiation between member
+non-member functions. Easy differentiation between member
 functions defined by the standard C++ libraries and our own
 functions.
 
