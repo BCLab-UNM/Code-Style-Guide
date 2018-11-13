@@ -314,8 +314,7 @@ Although both forms are equally valid C++, the heavy emphasis on types in C++ su
 ```C++
 int32* p; // Correct 
 int32 *p; // Incorrect 
-int32* p, q; // Probably error. However, this declaration cannot occur 
-// under the one name per declaration style required by AV Rule 152. 
+int32* p, q; // Probably error. 
 ```
 ### Rule 28
 **Rule:** Spaces will not be used around ‘.’ or ‘->’, nor between unary operators and operands. 
