@@ -119,8 +119,8 @@ float time0 = 0;
 float timeO = 0; 
 
 // Correct
-float timeZero = 0;
-float timeOpen = 0;
+float time_zero = 0;
+float time_open = 0;
 ```
 
 ### Rule 10 
